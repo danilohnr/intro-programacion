@@ -10,22 +10,13 @@ public class Constructores {
 		//Hay un constructor que es creado automáticamente por Java, el constructor sin parámetros.
 		// new Clase() -> Este es el constructor predeterminado, sin parámetros. Lo usamos para crear objetos.
 		
-		//Cuenta cuenta = new Cuenta();
+		Cuenta cuenta = new Cuenta();
 		//Se debe respetar el orden de los parámetros
 		//String numero, double balance, String nombreCliente, String email, String numeroTelefono
-		//Cuenta nuevaCuenta = new Cuenta("123456", 500.00, "Danilo Noguera", "danilo.noguera@gmail.com", "8803-7049");
+		Cuenta nuevaCuenta = new Cuenta("123456", 500.00, "Danilo Noguera", "danilo.noguera@gmail.com", "8803-7049");
 		//Podemos llamar un constructor dentro de otro constructor
 		//Para eso usamos la variable de referencia this() y dentro del paréntesis agregamos los valores iniciales
 		//Y debería ser la primera línea ejecutada dentro del constructor que llama a otro constructor
-		
-		ClienteVIP persona1 = new ClienteVIP();
-		System.out.println(persona1.getNombre());
-		
-		ClienteVIP persona2 = new ClienteVIP("Danilo Noguera", 2500.00);
-		System.out.println(persona2.getNombre());
-		
-		ClienteVIP persona3 = new ClienteVIP("Luis Rocha", 3000.00, "luis@gmail.com");
-		System.out.println(persona3.getNombre());
 	}
 }
 

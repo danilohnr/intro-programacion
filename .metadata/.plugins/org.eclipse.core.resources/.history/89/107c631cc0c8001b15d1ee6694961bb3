@@ -24,8 +24,7 @@ public class Constructores {
 		ClienteVIP persona2 = new ClienteVIP("Danilo Noguera", 2500.00);
 		System.out.println(persona2.getNombre());
 		
-		ClienteVIP persona3 = new ClienteVIP("Luis Rocha", 3000.00, "luis@gmail.com");
-		System.out.println(persona3.getNombre());
+		
 	}
 }
 
