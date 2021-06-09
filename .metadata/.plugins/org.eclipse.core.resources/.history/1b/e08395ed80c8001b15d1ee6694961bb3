@@ -1,0 +1,50 @@
+package clases;
+
+public class Clases {
+	//Todo objeto del mundo real tiene 2 características principales:
+	//Estados y Comportamientos
+	//Por ejemplo una PC, puede tener:
+	//RAM, sistema operativo, Disco duro, tamaño del monitor, etc
+	//Arrancar, apagarse, emitir sonido, imprimir algo, mostrar algo en pantalla, etc
+	//En POO, los objetos del mundo son clases (plantillas para crear objetos)
+	//Los estados son las variables
+	//Los comportamientos son los métodos
+	public static void main(String[] args) {		
+		//PC pcHP;// = new PC();
+		PC pcHP = new PC();
+		//pcHP = null;
+		PC pcAsus = new PC();
+		
+		//pcHP.tamanoMonitor = 15.6;
+		//pcAsus.tamanoMonitor = 17.3;
+		System.out.println("El modelo es " + pcHP.mostrarMarca());
+		//Asignar valor a la variable marca
+		
+		pcHP.establecerMarca("asus");
+		
+		System.out.println("El modelo es " + pcHP.mostrarMarca());
+		//***********************************************************************
+		Carro auto1 = new Carro();
+		
+		auto1.establecerAnio(2015);
+		auto1.establecerCantidadPuertas(4);
+		auto1.establecerMarca("Toyota");
+		auto1.establecerModelo("Corolla");
+		auto1.establecerMotor("V8");
+		auto1.tipoCombustible = "Gasolina regular";
+		Carro.propietario = "Danilo Noguera";
+		
+		
+		System.out.println("Detalle del carro 1");
+		System.out.println("Año: " + auto1.mostrarAnio());
+		System.out.println("Cantidad de puertas: " + auto1.mostrarCantidadPuertas());
+		System.out.println("Marca: " + auto1.mostrarMarca());
+		System.out.println("Modelo: " + auto1.mostrarModelo());
+		System.out.println("Motor: " + auto1.mostrarMotor());
+		System.out.println("Tipo de combustible: " + auto1.tipoCombustible);
+		System.out.println("Propietario: " + Carro.propietario);
+		auto1.propietario = "Danilo"; //Es legal pero no recomendable
+		System.out.println("Propietario: " + auto1.propietario);
+	}
+}
+

@@ -1,0 +1,18 @@
+package constructores;
+
+public class Constructores {
+
+	public static void main(String[] args) {
+		//Con un constructor se puede realizar la función que realizan los métodos setters
+		//al momento de crear un objeto o instancia de una clase.
+		//Permite establecer valores iniciales a los parámetros o campos de la clase al crear un objeto
+		//Los métodos constructores tienen el mismo nombre de la clase.
+		//Hay un constructor que es creado automáticamente por Java, el constructor sin parámetros.
+		// new Clase() -> Este es el constructor predeterminado, sin parámetros. Lo usamos para crear objetos.
+		
+		Cuenta cuenta = new Cuenta();
+		//Se debe respetar el orden de los parámetros
+		//String numero, double balance, String nombreCliente, String email, String numeroTelefono
+		Cuenta nuevaCuenta = new Cuenta("123456", 500.00, "Danilo Noguera", "danilo.noguera@gmail.com", "8803-7049");
+	}
+}

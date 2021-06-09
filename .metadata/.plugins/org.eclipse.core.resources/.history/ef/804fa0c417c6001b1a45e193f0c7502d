@@ -1,0 +1,56 @@
+package algoritmosordenamiento;
+
+public class Rapido {
+	public void OrdenRapido(int A[], int indiceBajo, int indiceAlto) {
+		if (indiceBajo < indiceAlto) {
+			int indicePart = particion(A, indiceBajo, indiceAlto);
+			OrdenRapido(A, indiceBajo, indicePart - 1);
+			OrdenRapido(A, indicePart + 1, indiceAlto);
+		}
+	}
+	public int particion(int A[], int indiceBajo, int indiceAlto) {
+		int pivote = A[indiceBajo];
+		int i = indiceBajo + 1;
+		int j = indiceAlto;
+		do {
+			while ((i <= j) && (A[i] <= pivote)) {
+				i = i +1;
+			}
+			while ((i <= j) && (A[j] > pivote)) {
+				j = j - 1;
+			}
+			if (i <= j) {
+				intercambiar(A, i, j);
+			}
+		} while (i < j);
+		intercambiar(A, indiceBajo, j);
+		return j;
+	}
+	public void intercambiar(int A[], int i, int j) {
+		int temp = A[i];
+		A[i] = A[j];
+		A[j] = temp;
+	}
+	public void mostrarArreglo(int A[], int n) {
+		for(int i = 0; i < n; i++) {
+			System.out.print(A[i] + " ");
+		}
+		System.out.println();
+	}
+	public static void main(String[] args) {
+		Rapido obj = new Rapido();
+		
+		int A[] = {3, 5, 8, 9, 5, 2};
+		
+		System.out.println("Arreglo original: ");
+		
+		obj.mostrarArreglo(A, A.length);
+		
+		obj.OrdenRapido(A, 0, A.length - 1);
+		
+		System.out.println("Arreglo ordenado: ");
+		
+		obj.mostrarArreglo(A, A.length);		
+	}
+}
+

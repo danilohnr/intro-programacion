@@ -1,0 +1,10 @@
+package constructores;
+
+public class Constructores {
+
+	public static void main(String[] args) {
+		//Con un constructor se puede realizar la función que realizan los métodos setters
+		//al momento de crear un objeto o instancia de una clase.
+		//Permite establecer valores iniciales a los parámetros o campos de la clase
+	}
+}

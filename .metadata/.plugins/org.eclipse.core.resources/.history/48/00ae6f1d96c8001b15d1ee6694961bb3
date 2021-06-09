@@ -1,0 +1,51 @@
+package clases;
+
+public class Cuenta {
+	private String numero;
+	private double balance;
+	private String nombreCliente;
+	private String email;
+	private String numeroTelefono;
+	//Métodos
+	public void depositar(double montoDepositado) {
+		this.balance += montoDepositado;
+	}
+	public void retirar(double montoRetirado) {
+		if (balance - montoRetirado <= 0) {
+			System.out.println("Solo tiene C$" + balance + " disponible.");
+			System.out.println("No se pudo realizar el retiro.");
+		}
+	}
+	//Métodos setters y getters
+	public String getNumero() {
+		return numero;
+	}
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+	public double getBalance() {
+		return balance;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	public String getNombreCliente() {
+		return nombreCliente;
+	}
+	public void setNombreCliente(String nombreCliente) {
+		this.nombreCliente = nombreCliente;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getNumeroTelefono() {
+		return numeroTelefono;
+	}
+	public void setNumeroTelefono(String numeroTelefono) {
+		this.numeroTelefono = numeroTelefono;
+	}
+	
+}

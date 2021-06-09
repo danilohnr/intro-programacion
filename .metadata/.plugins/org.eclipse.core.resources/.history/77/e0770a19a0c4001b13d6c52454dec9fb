@@ -1,0 +1,9 @@
+package algoritmosordenamiento;
+
+public class Rapido {
+
+	public static void main(String[] args) {
+		
+	}
+}
+

@@ -1,0 +1,15 @@
+package clases;
+
+public class PC {
+	//Una clase vacía de nada sirve
+	//Debemos especificarle atributos (estados) y comportamientos (métodos)
+	//A las variables y miembros de una clase se les conoce como miembros o campos
+	//Ejemplo de atributos o estados de una PC
+	private String marca;
+	private double tamanoMonitor;
+	private double cantidadRAM;
+	private String sistemaOperativo;
+	private int cantidadDiscos;
+	private double espacioDisco;
+	private double velocidadCPU;
+}

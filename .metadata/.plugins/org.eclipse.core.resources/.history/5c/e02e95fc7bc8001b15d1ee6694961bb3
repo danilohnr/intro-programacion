@@ -1,0 +1,43 @@
+package clases;
+
+public class Carro {
+	//Atributos
+	private String marca;
+	private String modelo;
+	private String motor;
+	private int anio;	
+	private int cantidadPuertas;
+	//Métodos
+	//Métodos setters
+	public void establecerMarca(String marca) {
+		this.marca = marca;
+	}
+	public void establecerModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	public void establecerMotor(String motor) {
+		this.motor = motor;
+	}
+	public void establecerAnio(int anio) {
+		this.anio = anio;
+	}
+	public void establecerCantidadPuertas(int cantidadPuertas) {
+		this.cantidadPuertas = cantidadPuertas;
+	}
+	//Métodos getters
+	public String mostrarMarca() {
+		return this.marca;
+	}
+	public String mostrarModelo() {
+		return this.modelo;
+	}
+	public String mostrarMotor() {
+		return this.motor;
+	}
+	public int mostrarAnio() {
+		return this.anio;
+	}
+	public int mostrarCantidadPuertas() {
+		return this.cantidadPuertas;
+	}
+}

@@ -1,0 +1,33 @@
+package algoritmosordenamiento;
+
+public class Rapido {
+	public void OrdenRapido(int A[], int indiceBajo, int indiceAlto) {
+		if (indiceBajo < indiceAlto) {
+			int indicePart = particion(A, indiceBajo, indiceAlto);
+			OrdenRapido(A, indiceBajo, indicePart - 1);
+			OrdenRapido(A, indicePart + 1, indiceAlto);
+		}
+	}
+	public int particion(int A[], int indiceBajo, int indiceAlto) {
+		int pivote = A[indiceBajo];
+		int i = indiceBajo + 1;
+		int j = indiceAlto;
+		do {
+			while ((i <= j) && (A[i] <= pivote)) {
+				i = i +1;
+			}
+			while ((i <= j) && (A[j] > pivote)) {
+				j = j + 1;
+			}
+			if (i <= j) {
+				intercambiar(A, i, j);
+			}
+		} while (i < j);
+		intercambiar(A, indiceBajo, j);
+		return j;
+	}
+	public static void main(String[] args) {
+		
+	}
+}
+

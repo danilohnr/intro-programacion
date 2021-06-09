@@ -1,0 +1,26 @@
+package clases;
+
+public class Clases {
+	//Todo objeto del mundo real tiene 2 características principales:
+	//Estados y Comportamientos
+	//Por ejemplo una PC, puede tener:
+	//RAM, sistema operativo, Disco duro, tamaño del monitor, etc
+	//Arrancar, apagarse, emitir sonido, imprimir algo, mostrar algo en pantalla, etc
+	//En POO, los objetos del mundo son clases (plantillas para crear objetos)
+	//Los estados son las variables
+	//Los comportamientos son los métodos
+	public static void main(String[] args) {		
+		//PC pcHP;// = new PC();
+		PC pcHP = new PC();
+		//pcHP = null;
+		PC pcAsus = new PC();
+		
+		//pcHP.tamanoMonitor = 15.6;
+		//pcAsus.tamanoMonitor = 17.3;
+		//Asignar valor a la variable marca
+		pcHP.establecerMarca("Hewlett Packard");
+		
+		System.out.println("El modelo es " + pcHP.mostrarMarca());
+	}
+}
+
