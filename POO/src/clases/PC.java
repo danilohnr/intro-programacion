@@ -14,6 +14,7 @@ public class PC {
 	private int cantidadDiscos;
 	private double espacioDisco;
 	private double velocidadCPU;
+	private double tamanoDisco;
 	//Ejemplo de comportamientos o métodos de una PC
 	//Asignar valor a la variable marca
 	public void establecerMarca(String marca) {
